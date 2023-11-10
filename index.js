@@ -4,94 +4,94 @@
 const button15 =document.getElementById('button15');
 const button25 =document.getElementById('button25');
  const button50 =document.getElementById('button50');
- const inputcustom =document.getElementById('inputcustom');
-const peoplenr =document.getElementById('peoplenr');
- const tipnr =document.getElementById('tipnr');
- const totalnr =document.getElementById('totalnr');
+ const inputCustom =document.getElementById('inputCustom');
+const peopleNr =document.getElementById('peopleNr');
+ const tipNr =document.getElementById('tipNr');
+ const totalNr =document.getElementById('totalNr');
 const reset =document.getElementById('resetbtn');
-const redp =document.getElementById('redp');
+const redP =document.getElementById('redP');
 
 button5.addEventListener('click',function(){
-    let tipAmount = 5/100*(bill.value/peoplenr.value);
-    tipnr.innerText = tipAmount.toFixed(2);
-    let totalAmount =(bill.value/peoplenr.value)+tipAmount;
-    totalnr.innerText =totalAmount.toFixed(2);
-    peoplenr.addEventListener('input', function() {
-        if (peoplenr.value > 0) {
-            redp.style.display = 'none';
+    let tipAmount = 5/100*(bill.value/peopleNr.value);
+    tipNr.innerText = tipAmount.toFixed(2);
+    let totalAmount =(bill.value/peopleNr.value)+tipAmount;
+    totalNr.innerText =totalAmount.toFixed(2);
+    peopleNr.addEventListener('input', function() {
+        if (peopleNr.value > 0) {
+            redP.style.display = 'none';
         } else {
-            redp.style.display = 'flex';
+            redP.style.display = 'flex';
         }
     });
 })
 button10.addEventListener('click',function(){
-    let tipAmount= 10/100*(bill.value/peoplenr.value);
-    tipnr.innerText = tipAmount.toFixed(2);
-    let totalAmount =(bill.value/peoplenr.value)+tipAmount;
-    totalnr.innerText =totalAmount.toFixed(2);
-    peoplenr.addEventListener('input', function() {
-        if (peoplenr.value > 0) {
-            redp.style.display = 'none';
+    let tipAmount= 10/100*(bill.value/peopleNr.value);
+    tipNr.innerText = tipAmount.toFixed(2);
+    let totalAmount =(bill.value/peopleNr.value)+tipAmount;
+    totalNr.innerText =totalAmount.toFixed(2);
+    peopleNr.addEventListener('input', function() {
+        if (peopleNr.value > 0) {
+            redP.style.display = 'none';
         } else {
-            redp.style.display = 'flex';
+            redP.style.display = 'flex';
         }
     });
 })
 button15.addEventListener('click',function(){
-    let tipAmount= 15/100* (bill.value/peoplenr.value);
-    tipnr.innerText = tipAmount.toFixed(2);
-    let totalAmount =(bill.value/peoplenr.value)+tipAmount;
-    totalnr.innerText =totalAmount.toFixed(2);
-    peoplenr.addEventListener('input', function() {
-        if (peoplenr.value > 0) {
-            redp.style.display = 'none';
+    let tipAmount= 15/100* (bill.value/peopleNr.value);
+    tipNr.innerText = tipAmount.toFixed(2);
+    let totalAmount =(bill.value/peopleNr.value)+tipAmount;
+    totalNr.innerText =totalAmount.toFixed(2);
+    peopleNr.addEventListener('input', function() {
+        if (peopleNr.value > 0) {
+            redP.style.display = 'none';
         } else {
-            redp.style.display = 'flex';
+            redP.style.display = 'flex';
         }
     });
 })
 button25.addEventListener('click',function(){
-    let tipAmount= 25/100*(bill.value/peoplenr.value);
-    tipnr.innerText = tipAmount.toFixed(2);
-    let totalAmount =(bill.value/peoplenr.value)+tipAmount;
-    totalnr.innerText =totalAmount.toFixed(2);
-    peoplenr.addEventListener('input', function() {
-        if (peoplenr.value > 0) {
-            redp.style.display = 'none';
+    let tipAmount= 25/100*(bill.value/peopleNr.value);
+    tipNr.innerText = tipAmount.toFixed(2);
+    let totalAmount =(bill.value/peopleNr.value)+tipAmount;
+    totalNr.innerText =totalAmount.toFixed(2);
+    peopleNr.addEventListener('input', function() {
+        if (peopleNr.value > 0) {
+            redP.style.display = 'none';
         } else {
-            redp.style.display = 'flex';
+            redP.style.display = 'flex';
         }
     });
    
 })
 button50.addEventListener('click',function(){
-    let tipAmount= 50/100*(bill.value/peoplenr.value);
-    tipnr.innerText = tipAmount.toFixed(2);
-    let totalAmount =(bill.value/peoplenr.value)+tipAmount;
-    totalnr.innerText =totalAmount.toFixed(2);
-    peoplenr.addEventListener('input', function() {
-        if (peoplenr.value > 0) {
-            redp.style.display = 'none';
+    let tipAmount= 50/100*(bill.value/peopleNr.value);
+    tipNr.innerText = tipAmount.toFixed(2);
+    let totalAmount =(bill.value/peopleNr.value)+tipAmount;
+    totalNr.innerText =totalAmount.toFixed(2);
+    peopleNr.addEventListener('input', function() {
+        if (peopleNr.value > 0) {
+            redP.style.display = 'none';
         } else {
-            redp.style.display = 'flex';
+            redP.style.display = 'flex';
         }
     });
 })
 
 reset.addEventListener('click',function(){
-    tipnr.innerText ='0.00';
-    totalnr.innerText='0.00';
+    tipNr.innerText ='0.00';
+    totalNr.innerText='0.00';
     bill.value='0';
-    peoplenr.value='0';
-    redp.style.display='none';
-    inputcustom.value ='0';
+    peopleNr.value='0';
+    redP.style.display='none';
+    inputCustom.value ='0';
 })
 
-inputcustom.addEventListener('keyup',function(){
-    let tipAmount= inputcustom.value/100*(bill.value/peoplenr.value);
-    tipnr.innerText = tipAmount.toFixed(2);
-    let totalAmount =(bill.value/peoplenr.value)+tipAmount;
-    totalnr.innerText =totalAmount.toFixed(2);
+inputCustom.addEventListener('keyup',function(){
+    let tipAmount= inputCustom.value/100*(bill.value/peopleNr.value);
+    tipNr.innerText = tipAmount.toFixed(2);
+    let totalAmount =(bill.value/peopleNr.value)+tipAmount;
+    totalNr.innerText =totalAmount.toFixed(2);
     
 })
 
