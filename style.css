@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&family=Space+Mono:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Space Mono, sans sans-serif;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 60px;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  padding: 25px;
+  width: 45%;
+}
+
+.bill {
+  background-color: hsl(189, 41%, 95%);
+  font-size: 18px;
+  text-align: right;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  outline: solid hsl(172, 67%, 45%) 2px;
+  width: 100%;
+}
+
+.dollar {
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 8px;
+}
+
+.tips {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+}
+
+.tips button {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  border-radius: 3px;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.tips button:hover {
+  background-color: hsl(183, 100%, 35%);
+}
+
+#inputcustom {
+  background-color: hsl(189, 41%, 95%);
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  outline: solid hsl(172, 67%, 45%) 2px;
+  width: 100%;
+}
+
+.peoplenr {
+  background-color: hsl(189, 41%, 95%);
+  font-size: 18px;
+  text-align: right;
+  border: none;
+  border-radius: 4px;
+  margin-top: 5px;
+  outline: solid hsl(172, 67%, 45%) 2px;
+  width: 100%;
+}
+
+.people {
+  position: absolute;
+  margin-left: 4px;
+  margin-top: 8px;
+}
+
+.peoplebox {
+  display: flex;
+  font-size: 11px;
+  justify-content: space-between;
+}
+
+.redp {
+  display: none;
+}
+
+.l1left {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  text-align: left;
+}
+
+.l1right {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  color: hsl(172, 67%, 45%);
+}
+
+.line1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.l2left {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+.l2right {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  color: hsl(172, 67%, 45%);
+}
+
+.line2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.rightside {
+  display: flex;
+  padding: 25px;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(183, 100%, 15%);
+  margin-left: 25px;
+  width: 100%;
+}
+
+.reset {
+  border-radius: 3px;
+  border: none;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+  width: 90%;
+  margin-top: 110px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.reset:hover {
+  background-color: hsl(172, 67%, 65%);
+}
+
+.leftside {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: white;
+  width: 100%;
+}
+
+.person {
+  font-size: 12px;
+}
