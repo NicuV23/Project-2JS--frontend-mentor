@@ -6,6 +6,7 @@ const button25 =document.getElementById('button25');
  const button50 =document.getElementById('button50');
  const inputCustom =document.getElementById('inputCustom');
 const peopleNr =document.getElementById('peopleNr');
+console.log(peopleNr.value);
  const tipNr =document.getElementById('tipNr');
  const totalNr =document.getElementById('totalNr');
 const reset =document.getElementById('resetbtn');
@@ -16,6 +17,9 @@ button5.addEventListener('click',function(){
     tipNr.innerText = tipAmount.toFixed(2);
     let totalAmount =(bill.value/peopleNr.value)+tipAmount;
     totalNr.innerText =totalAmount.toFixed(2);
+    if(peopleNr.value !='null'){
+        redP.style.display='flex';
+    }
     peopleNr.addEventListener('input', function() {
         if (peopleNr.value > 0) {
             redP.style.display = 'none';
@@ -29,6 +33,9 @@ button10.addEventListener('click',function(){
     tipNr.innerText = tipAmount.toFixed(2);
     let totalAmount =(bill.value/peopleNr.value)+tipAmount;
     totalNr.innerText =totalAmount.toFixed(2);
+    if(peopleNr.value !='null'){
+        redP.style.display='flex';
+    }
     peopleNr.addEventListener('input', function() {
         if (peopleNr.value > 0) {
             redP.style.display = 'none';
@@ -42,6 +49,9 @@ button15.addEventListener('click',function(){
     tipNr.innerText = tipAmount.toFixed(2);
     let totalAmount =(bill.value/peopleNr.value)+tipAmount;
     totalNr.innerText =totalAmount.toFixed(2);
+    if(peopleNr.value !='null'){
+        redP.style.display='flex';
+    }
     peopleNr.addEventListener('input', function() {
         if (peopleNr.value > 0) {
             redP.style.display = 'none';
@@ -55,6 +65,9 @@ button25.addEventListener('click',function(){
     tipNr.innerText = tipAmount.toFixed(2);
     let totalAmount =(bill.value/peopleNr.value)+tipAmount;
     totalNr.innerText =totalAmount.toFixed(2);
+    if(peopleNr.value !='null'){
+        redP.style.display='flex';
+    }
     peopleNr.addEventListener('input', function() {
         if (peopleNr.value > 0) {
             redP.style.display = 'none';
@@ -69,6 +82,9 @@ button50.addEventListener('click',function(){
     tipNr.innerText = tipAmount.toFixed(2);
     let totalAmount =(bill.value/peopleNr.value)+tipAmount;
     totalNr.innerText =totalAmount.toFixed(2);
+    if(peopleNr.value !='null'){
+        redP.style.display='flex';
+    }
     peopleNr.addEventListener('input', function() {
         if (peopleNr.value > 0) {
             redP.style.display = 'none';
@@ -92,6 +108,8 @@ inputCustom.addEventListener('keyup',function(){
     tipNr.innerText = tipAmount.toFixed(2);
     let totalAmount =(bill.value/peopleNr.value)+tipAmount;
     totalNr.innerText =totalAmount.toFixed(2);
-    
+    if(peopleNr.value !='null'){
+        redP.style.display='flex';
+    }
 })
 
